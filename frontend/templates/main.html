@@ -1,0 +1,27 @@
+{% include 'header.html' %}
+
+<div class="container">
+    <h1>Habit Tracker</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Habit</th>
+                <th scope="col">Frequency</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for habit in habits %}
+            <tr>
+                <td>{{ habit.name }}</td>
+                <td>{{ habit.frequency }}</td>
+                <td>
+                    <a href="/edit_habit/{{ habit.id }}" class="btn btn-primary">Edit</a>
+                    <a href="/delete_habit/{{ habit.id }}" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% include 'footer.html' %}

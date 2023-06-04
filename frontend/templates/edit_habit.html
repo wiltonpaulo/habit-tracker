@@ -1,0 +1,20 @@
+{% include 'header.html' %}
+
+<div class="container">
+    <h1>Edit Habit</h1>
+    <form action="/edit_habit/{{ habit.id }}" method="POST">
+        <div class="form-group">
+            <label for="habit-name">Habit</label>
+            <input type="text" class="form-control" id="habit-name" name="name" value="{{ habit.name }}" required>
+        </div>
+        <div class="form-group">
+            <label for="habit-frequency">Frequency</label>
+            <select class="form-control" id="habit-frequency" name="frequency" required>
+                <option value="daily" {% if habit.frequency == 'daily' %}selected{% endif %}>Daily</option>
+                <option value="weekly" {% if habit.frequency == 'weekly' %}selected{% endif %}>Weekly</option>
+                <option value="monthly" {% if habit.frequency == 'monthly' %}selected{% endif %}>Monthly</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+    </form>
+</div>

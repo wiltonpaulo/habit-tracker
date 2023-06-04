@@ -1,0 +1,19 @@
+/* Custom styles */
+
+.container {
+    margin-top: 20px;
+}
+
+table {
+    margin-top: 20px;
+}
+
+.btn-group {
+    margin-right: 5px;
+}
+
+.logo {
+    max-width: 30px;
+    max-height: 30px;
+    margin-right: 5px;
+}

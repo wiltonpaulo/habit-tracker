@@ -1,0 +1,6 @@
+aniso8601==9.0.1
+cffi==1.15.1
+pycparser==2.21
+pytz==2023.3
+six==1.16.0
+typing_extensions==4.6.3

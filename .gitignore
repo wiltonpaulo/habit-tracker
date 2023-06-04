@@ -1,0 +1,24 @@
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.pyz
+*.pyw
+*.pyi
+*.pyinstaller/
+*.pylintrc
+
+# Secrets
+secrets.ini
+secrets.yaml
+secrets.json
+secrets.env
+
+# Temporary files
+*.swp
+*~
+*.tmp
+*.bak
+*.cache
+*.log
