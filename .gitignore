@@ -22,3 +22,4 @@ secrets.env
 *.bak
 *.cache
 *.log
+.DS_Store
